@@ -1,0 +1,39 @@
+
+<!DOCTYPE html> 
+<html lang="es"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Login</title> 
+        <link rel="stylesheet" href="style.css"> 
+        <!-- Enlace al CSS --> 
+    </head> 
+    
+    <body> 
+        <div class="login-container"> 
+            <h2>Iniciar sesión</h2> 
+            <!-- Aquí comienza el formulario --> 
+            <form onsubmit="return validateForm()"> 
+                <!-- Llama a la función de validación JS --> 
+                <!-- Campo para el nombre --> 
+                <label for="nombre">Nombre:</label> 
+                <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre completo"> 
+                <!-- Campo para el email --> 
+                <label for="email">Email:</label> 
+                <input type="text" id="email" name="email" placeholder="Ingresa tu email"> 
+                <!-- Campo para la contraseña --> 
+                <label for="password">Contraseña:</label> 
+                <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña"> 
+                <!-- Botón para enviar el formulario --> 
+                <button type="submit">Iniciar sesión</button> 
+                <!-- Aquí aparecerán los mensajes de error si los hay --> 
+                
+                <p id="error-message"></p> 
+            </form> 
+            <!-- Aquí termina el formulario --> 
+            <p>¿No tienes una cuenta? <a href="registro.html">Registrate aquí!</a></p>
+        </div> 
+        <script src="login.js"></script> <!-- Enlace al archivo JS --> 
+    </body> 
+    
+</html>
